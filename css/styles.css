@@ -1,0 +1,689 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Main Wrapper */
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* Sidebar */
+.sidebar {
+    width: 180px;
+    background-color: #333;
+    color: white;
+   
+    position: sticky;
+   
+}
+
+.sidebar h3 {
+    color: #fff;
+    margin-bottom: 16px;
+    background-color: #28a246;
+    padding: 3%;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+   margin-bottom: 20px;
+   margin-left: 50px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #3498db;
+}
+
+/* Content Area */
+.content {
+    flex-grow: 1;
+    margin-left: 2px;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center; /* Ensure vertical alignment of navbar items */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline-block; /* Keeps the items inline */
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Search bar positioned on the far right */
+.navbar ul li.search-bar {
+    margin-left: auto; /* Push the search bar to the far right */
+}
+
+/* Search input and button styling */
+.search input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search button {
+    padding: 6px 15px;
+    background-color: #575757;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search button:hover {
+    background-color: #333;
+}
+
+/*cart image*/
+.cart{
+    width: 30px;
+}
+/*cart page*/
+/* Style the container div */
+.table {
+    width: 190%;
+  
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+  
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+.table tbody tr td a{
+    text-decoration: none;
+}
+
+/* Table header styling */
+thead {
+    
+    background-color: #4CAF50;
+    
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th a, td a {
+    color: black;
+    text-decoration: none;
+}
+
+th a:hover, td a:hover {
+    text-decoration: underline;
+}
+
+/* Product image styling */
+.form_image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Input fields for quantity */
+input[type="text"] {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+
+/* Styling for remove checkbox */
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* Alternating row background colors */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/*footer*/
+.footer{
+    background-color: black;
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+    font-size: 18px;
+  color: white;
+}
+
+
+/* Product Cards */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.card1 {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    margin-top: 5px;
+}
+
+.card1:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 100%;
+   height: 200px;
+   object-fit: contain;
+}
+
+.product-par {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-par b {
+    color: #e74c3c;
+}
+
+button {
+    background-color: #28a246;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+.navbar input{
+    width: 200px;
+    padding: 8px 15px 8px 15px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+
+/*profile part*/
+.profile{
+    
+   margin-bottom: 100px;
+    margin-top: 0px;
+    display: flex;
+
+}
+.profile-par{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    padding: 2%;
+    font-size: 19px;
+}
+.profile-image{
+    width:90%;
+    margin: auto;
+}
+ .profile-header{
+    color: white;
+    font-size: 21px;
+    background-color: rgb(0, 174, 255);
+    text-align: center;
+    padding: 5%;
+   
+}
+.profile a{
+    text-decoration: none;
+    color: white;
+}
+.profile-title{
+    width: 200px;
+background-color: grey;
+}
+.profile-operations{
+    width: 600px;
+margin-left: 20%;
+   margin-top: 20px;
+   font-size: 25px;
+}
+.profile-par2{
+margin-top:8px;
+font-weight: bold;
+font-size: 25px;
+margin-left: 20%;
+
+}
+
+
+
+
+
+
+
+.search-bt, .add-to-cart, .view-more, .admin-operations, .logout, .insert-bt, .insert-product-bt, .remove-item, .continue-shopping{
+width: 100px;
+background-color: #28a246;
+border:1px solid white;
+font-size: 18px;
+padding: 10px 10px 10px 10px;
+
+}
+.remove-item{
+    width: 200px;
+ 
+  
+}
+.remove-item a{
+    text-decoration: none;
+    color: white;
+}
+.insert-product-bt{
+    width: 200px;
+    border-radius: 5px;
+}
+.insert-product-bt a{
+    text-decoration: none;
+    color: black;  
+}
+.insert-bt{
+    width: 200px;
+    border-radius: 5%;
+}
+.insert-bt a{
+    text-decoration: none;
+    color: black;    
+    
+ 
+}
+.admin-operations, .logout{
+    width: 160px;
+    margin-bottom: 10px;
+    margin: 7px;
+   
+
+}
+.logout{
+    margin-left: 50%;
+}
+.logout a{
+    text-decoration: none;
+    color: white;  
+}
+.admin-operations a{
+ text-decoration: none;
+    color: white;   
+}
+.add-to-cart, .view-more{
+    width: 150px;
+    padding: 1%;
+
+    
+}
+.continue-shopping{
+    width: 250px;
+    margin-left: 20px;
+}
+.continue-shopping a{
+    text-decoration: none;
+    color: white;
+}
+.add-to-cart, .remove-item{
+    margin-left: 68px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #28a745;
+}
+.add-to-cart a{
+    text-decoration: none;
+    color: white;
+}
+.view-more, .continue-shopping{
+    display: inline;  
+    background-color: grey;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.view-more a{
+    text-decoration: none;
+    color: white; 
+}
+.search-bt a{
+    text-decoration: none;
+    color: white;
+}
+.welcome{
+    display: flex;
+    background-color: #28a246;
+    padding: 15px 15px 15px 15px;
+    
+}
+.welcome-guest{
+    color: white;
+    font-weight: normal;
+
+}
+
+.login{
+    margin-left: 30px;
+    font-weight: normal;
+
+}
+.login a{
+    text-decoration: none;
+    color: white;
+}
+.hidden-store{
+    text-align: center;
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.hidden-store-par{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+
+}
+
+
+/*admin part*/
+.welcome-admin{
+    display: flex;
+    justify-content: space-between;
+    background-color: #28a246;
+}
+.admin-cart-image{
+    width: 60px;
+    
+}
+.welcome-admin-header{
+    padding: 20px 10px 10px 10px;
+  
+
+}
+.admin-image{
+width: 80px;
+
+
+}
+.manage-details{
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    font-size: 29px;
+}
+
+
+.admin-image-par{
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+}
+.insert-category{
+margin-left: 20%;
+list-style: none;
+}
+
+.insert-category input{
+    width: 85%;
+    padding: 15px 15px 15px 15px;
+    font-size: 19px;
+    border: 2px solid #dfdada;
+    margin-bottom: 15px;
+}
+.insert-icon{
+    width: 20px;
+ 
+}
+.insert-icon-bt{
+    padding: 13px 15px 17px 15px;
+    background-color: #28a246;
+    border: none;
+    
+    
+}
+/*insert_products part*/
+.insert_products{
+    display: inline-block;
+    margin-left: 30%;
+    margin-bottom: 15px;
+}
+.insert_products label{
+    display: block;
+    padding: 10px 10px 10px 10px;
+    font-size: 19px;
+}
+.insert_products input{
+    border: 1px solid #dfdada;
+    width: 600px;
+    padding: 15px 15px 15px 15px;
+    font-size: 19px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.insert_products select{
+    border: 1px solid #dfdada;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 600px; 
+    padding: 15px 15px 15px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/*home page*/
+
+
+.related{
+    display: inline-flex;
+    padding-left: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.button-operations ul li{
+    display: inline;
+    margin-left: 15px;
+}
+
+.buttons{
+    display: flex;
+    background-color: grey; 
+    padding: 1%; 
+    
+}
+.delivery-brands{
+    background-color: rgb(0, 174, 255);
+    padding-bottom: 20px;  
+    color: white;
+    
+    padding: 10px 30px 10px 60px;
+}
+
+
+
+
+.table-image{
+    width: 70px;
+    
+}
+table{
+    border-collapse: collapse;
+}
+
+.table{
+ margin-left: 20%;   
+ margin-bottom: 20px;
+
+
+
+}
+.table thead tr th{
+    padding: 15px 15px 15px 15px;
+    font-size: 19px;
+   
+  
+ 
+    
+}
+th,td{
+    border: 1px solid #dfdada; 
+    
+}
+
+.table tbody tr td{
+    padding: 15px 15px 15px 15px;
+    font-size: 19px;
+ 
+}
+
+.table input{
+    padding: 15px 15px 15px 15px;
+    border: 1px solid #dfdada; 
+    border-radius: 4px;
+}
+
+.subtotal{
+    display: inline;
+    margin-left: 10%;
+   margin-top: 10px;
+   
+}
+.table, .subtotal {
+    margin-bottom: 40%;
+   
+}
+
+/*form part in the confirm payment page*/
+.form{
+    margin-left: 25%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 800px;
+    padding: 4%;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    
+   
+}
+.form label{
+    display: block;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.form input{
+    width: 450px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+.form select{
+    width: 450px;
+    padding: 25px 15px 15px 25px; 
+    margin: 15px;  
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.confirm_payment_header{
+    font-size: 29px;
+    color: rgb(0, 255, 42);
+}
+
+.confirm{
+    width: 200px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: rgb(0, 174, 255);
+border: none;
+}
